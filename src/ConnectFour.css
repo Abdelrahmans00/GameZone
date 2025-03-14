@@ -1,0 +1,61 @@
+.connect-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  padding: 20px;
+}
+
+.connect-four .board {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(50px, 80px));
+  grid-template-rows: repeat(6, minmax(50px, 80px));
+  gap: 10px;
+  background-color: #0F172A;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+}
+
+.connect-four .cell {
+  width: 100%;
+  aspect-ratio: 1; 
+  background-color: #475569;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 5px;
+}
+
+.connect-four .cell.red {
+  background-color: red;
+}
+
+.connect-four .cell.blue {
+  background-color: blue;
+}
+
+
+
+@media (max-width: 768px) {
+  .connect-four .board {
+    grid-template-columns: repeat(7, minmax(40px, 60px));
+    grid-template-rows: repeat(6, minmax(40px, 60px));
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .connect-four .board {
+    grid-template-columns: repeat(7, minmax(30px, 50px));
+    grid-template-rows: repeat(6, minmax(30px, 40px));
+    gap: 5px;
+  }
+  
+}

@@ -1,0 +1,123 @@
+.memory-game * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.memory-game {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Unicode', Geneva, Verdana, sans-serif;
+  background-color: #0F172A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.memory-game .game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  transform: scale(0.9);
+}
+
+
+.memory-game .container {
+  height: 600px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.5em;
+}
+
+.memory-game .card {
+  background-color: #475569;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  transform: scale(0.95);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.memory-game .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+
+.memory-game .card.active img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .memory-game .game-container {
+    transform: scale(0.8);
+  }
+
+  .memory-game .container {
+    height: 400px;
+    width: 400px;
+  }
+
+  .memory-game .back-home-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+.back-home-btn {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  font-size: 0.9rem; 
+  font-weight: bold;
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1em;
+}
+
+.back-home-btn:hover {
+  background: linear-gradient(135deg, #ff5e8a, #ff3e67);
+  transform: scale(1.05);
+}
+
+
+.game-title {
+  font-size: 1.6rem; 
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  color: #D1D5DB;
+}
+
+.play-again-btn {
+  background: linear-gradient(135deg, #32CD32, #28a745);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  margin-top: 1.5em;
+}
+
+.play-again-btn:hover {
+  background: linear-gradient(135deg, #28a745, #218838);
+  transform: scale(1.05);
+}
