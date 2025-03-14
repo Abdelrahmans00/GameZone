@@ -17,7 +17,7 @@ function HomePage() {
     <div className="bg-gray-900 text-white min-h-screen">
       <header
         className="relative h-[500px] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/img/trig.jpg')" }}
+        style={{ backgroundImage: "url('./dist/img/trig.jpg')" }}
       >
         <div className="absolute inset-0 bg-opacity-50"></div>
         <div className="z-10 text-center">
