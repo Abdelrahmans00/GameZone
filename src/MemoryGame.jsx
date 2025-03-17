@@ -9,22 +9,22 @@ function Cards() {
   
   const initializeGame = () => {
     return [
-      { id: 1, img: '/img/1.jpeg', stat: "" },
-      { id: 1, img: '/img/1.jpeg', stat: "" },
-      { id: 2, img: '/img/2.jpeg', stat: "" },
-      { id: 2, img: '/img/2.jpeg', stat: "" },
-      { id: 3, img: '/img/3.jpeg', stat: "" },
-      { id: 3, img: '/img/3.jpeg', stat: "" },
-      { id: 4, img: '/img/4.jpeg', stat: "" },
-      { id: 4, img: '/img/4.jpeg', stat: "" },
-      { id: 5, img: '/img/5.jpeg', stat: "" },
-      { id: 5, img: '/img/5.jpeg', stat: "" },
-      { id: 6, img: '/img/6.jpeg', stat: "" },
-      { id: 6, img: '/img/6.jpeg', stat: "" },
-      { id: 7, img: '/img/7.jpeg', stat: "" },
-      { id: 7, img: '/img/7.jpeg', stat: "" },
-      { id: 8, img: '/img/8.jpeg', stat: "" },
-      { id: 8, img: '/img/8.jpeg', stat: "" }
+      { id: 1, img: '/GameZone/img/1.jpeg', stat: "" },
+      { id: 1, img: '/GameZone/img/1.jpeg', stat: "" },
+      { id: 2, img: '/GameZone/img/2.jpeg', stat: "" },
+      { id: 2, img: '/GameZone/img/2.jpeg', stat: "" },
+      { id: 3, img: '/GameZone/img/3.jpeg', stat: "" },
+      { id: 3, img: '/GameZone/img/3.jpeg', stat: "" },
+      { id: 4, img: '/GameZone/img/4.jpeg', stat: "" },
+      { id: 4, img: '/GameZone/img/4.jpeg', stat: "" },
+      { id: 5, img: '/GameZone/img/5.jpeg', stat: "" },
+      { id: 5, img: '/GameZone/img/5.jpeg', stat: "" },
+      { id: 6, img: '/GameZone/img/6.jpeg', stat: "" },
+      { id: 6, img: '/GameZone/img/6.jpeg', stat: "" },
+      { id: 7, img: '/GameZone/img/7.jpeg', stat: "" },
+      { id: 7, img: '/GameZone/img/7.jpeg', stat: "" },
+      { id: 8, img: '/GameZone/img/8.jpeg', stat: "" },
+      { id: 8, img: '/GameZone/img/8.jpeg', stat: "" }
     ].sort(() => Math.random() - 0.5);
   };
 
